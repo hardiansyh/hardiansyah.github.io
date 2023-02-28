@@ -1,0 +1,124 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: 'Monserrat',sans-serif;
+    background-color: #1a1a1a;
+}
+
+.container {
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    padding: 2rem 1.5rem;
+    background-color: #dfdfdf;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 1.5rem;
+}
+.profile h1{
+    padding-bottom: 5px;
+}
+.profile img{
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile .about {
+    width: 50%;
+    text-align: center;
+    line-height: 1.2rem;
+    padding-top: 30px;
+}
+.profile .about p {
+    padding-top: 10px;
+}
+
+.sosial-media {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+}
+.sosial-media ul {
+    height: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.sosial-media ul
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+.sosial-media ul
+li a:hover {
+    background-color: crimson;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-evenly;
+}
+.experience .edukasi,
+.pengalaman, .bahasa {
+    padding: 10px;
+}
+.pengalaman p {
+    line-height: 1.5rem;
+}
+.experience li {
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        width: 90%;
+        height: max-content;
+    }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .profile .about {
+        width: 100%;
+    }
+    .sosial-media {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        width: auto;
+        border-radius: 0;
+    }
+    .profile {
+        padding-top: 1rem;
+    }
+    .sosial-media {
+        padding-top: 2rem;
+    }
+    .experience {
+        flex-direction: column;
+    }
+}
